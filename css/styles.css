@@ -125,9 +125,15 @@ header .container{
     border-bottom: 1px solid #ECECEC
 }
 
-.envelope:hover, .envelope:focus,
-.smartphone:hover, .smartphone:focus {
+.header li:hover .envelope, .header li:focus .envelope,
+.header li:hover .smartphone, .header li:focus .smartphone {
     fill: var(--accent-color);
+    cursor: pointer;
+}
+
+.header li:hover .link,
+.header li:focus .link {
+    color: var(--accent-color);
     cursor: pointer;
 }
 
